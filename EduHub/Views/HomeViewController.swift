@@ -75,7 +75,6 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
     func loadPublishedBlogs() {
         // Fetch published blogs from Firestore
         firestore.collection("articles")
@@ -90,7 +89,6 @@ class HomeViewController: UIViewController {
                     print("No blogs")
                     return
                 }
-                
                 print(documents)
                 self.publishedBlogs = documents.compactMap { document in
                     let data = document.data()
@@ -167,7 +165,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         
     }
-    // cell initialization
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
@@ -188,11 +186,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         
     }
-    // clicking behaviour
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == publishedBlogsCollectionView || collectionView == myBlogsCollectionView {
             let controller = SingleBlogViewController.instantiate()
-            
             controller.article = collectionView == publishedBlogsCollectionView ? publishedBlogs[indexPath.row] : myBlogs[indexPath.row]
             navigationController?.pushViewController(controller, animated: true)
         } else if collectionView == categoryCollectionView {

@@ -223,8 +223,8 @@
 		E25A4B972BBD0D4900304923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2FB990D2BC7046E00801157 /* MyBolgViewCell */,
 				E22E3D442BC9AF01008A4696 /* ArticleListToCategory */,
+				E2FB990D2BC7046E00801157 /* MyBolgViewCell */,
 				E2FB99082BC7024900801157 /* PublishedBlogViewCell */,
 				E2FB99032BC6F71900801157 /* BlogCategoryViewCell */,
 				E24555D22BBBFCD000ED4CF3 /* LoginViewController.swift */,
@@ -266,10 +266,10 @@
 				E25A4B972BBD0D4900304923 /* Views */,
 				E245560F2BBC07EB00ED4CF3 /* Models */,
 				E24555D62BBC006F00ED4CF3 /* GoogleService-Info.plist */,
-				E28093842BBBE4D300C46A2B /* Main.storyboard */,
 				E280937E2BBBE4D300C46A2B /* AppDelegate.swift */,
 				E28093802BBBE4D300C46A2B /* SceneDelegate.swift */,
 				E28093822BBBE4D300C46A2B /* ViewController.swift */,
+				E28093842BBBE4D300C46A2B /* Main.storyboard */,
 				E280938A2BBBE4D500C46A2B /* Assets.xcassets */,
 				E280938C2BBBE4D500C46A2B /* LaunchScreen.storyboard */,
 				E280938F2BBBE4D500C46A2B /* Info.plist */,

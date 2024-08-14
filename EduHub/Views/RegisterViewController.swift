@@ -51,7 +51,7 @@ class RegisterViewController: UIViewController {
                     let newUser = User(name: name, username: username, id: userId, adminUser: false)
                     saveUserToFirestore(user: newUser)
                     UserDefaults.standard.set(userId, forKey: "user")
-                    UserDefaults.standard.set(false, forKey: "adminUser")
+                    UserDefaults.standard.set(userId, forKey: "adminUser")
                 } else {
                     self.alertMessage(title: "Error", message: "User ID not found")
                 }
